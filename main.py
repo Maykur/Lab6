@@ -11,6 +11,12 @@ def encode(password):
     print()
     return encodedString
 
+def decode(password):
+    decodedString = ''
+    for n in password:
+        decodedString += str(int(n) - 3)
+    print(f"The encoded password is {password}, and the original password {decodedString}.")
+    print("")
 
 def main():
     encoded = None
@@ -27,6 +33,9 @@ def main():
         if userInput == 1:
             password = input('Please enter your password to encode: ')
             encoded = encode(password)
+
+        elif userInput == 2:
+            decode(encode)
 
 
         elif userInput == 3:
