@@ -28,10 +28,6 @@ def main():
             password = input('Please enter your password to encode: ')
             encoded = encode(password)
 
-        elif userInput == 2:
-            decoded = decode(encoded)
-            print(f'The encoded password is {encoded}, and the original password is {decoded}.')
-            print('')
 
         elif userInput == 3:
             sys.exit()
